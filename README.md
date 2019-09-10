@@ -8,8 +8,8 @@ Git is a type of version control system(VCS). A VCS enables you to record change
 
 The main features of GIT are :
 
-1. Take snapshots of flies over time.
-2. Restore the earlier versions of flies from snapshots.
+1. Take snapshots of files over time.
+2. Restore the earlier versions of files from snapshots.
 3. Work on multiple versions of a file in parallel.
 
 #### Git commit graph:
