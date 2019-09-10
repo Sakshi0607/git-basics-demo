@@ -42,7 +42,7 @@ In the above lines of code , I created a local directory named gitdemo. Then i c
 
 ```
 $ cat A.txt
-# This the the content of file A
+// This the the content of file A
 ```
 
 Then i make this directory hold a git project using the git init command. The output which i get after running this command is:
