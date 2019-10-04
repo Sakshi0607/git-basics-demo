@@ -38,25 +38,25 @@ $ cd gitdemo
 $ vi A.txt
 ```
 
-In the above lines of code , i created a local directory named gitdemo. Then i created a file named A.txt in it. The contents of the file are:
+In the above lines of code , I created a local directory named gitdemo. Then i created a file named A.txt in it. The contents of the file are:
 
 ```
 $ cat A.txt
-This the the content of file A
+// This the the content of file A
 ```
 
 Then i make this directory hold a git project using the git init command. The output which i get after running this command is:
 
 ```
 $ git init
-Initialized empty Git repository in /home/aryama/gitdemo/.git/
+// Initialized empty Git repository in /home/aryama/gitdemo/.git/
 ```
 
  With this command ,git adds a new hidden sub directory .git in gitdemo directory.
 
 ```
 $ la
-A.txt .git
+// A.txt .git
 ```
 
 #### Configure Git username and email:
@@ -100,7 +100,7 @@ We stage the file A.txt with the git add command.
 ```
 $ git add A.txt
 $ git status
-On branch master
+// On branch master
 
 No commits yet
 
@@ -151,7 +151,7 @@ Now lets add another file B.txt and view its content
 ```
 $ vi B.txt
 $ cat B.txt
-This the the content of file B
+// This the the content of file B
 ```
 
 Now this file is untracked. If we run git status will be:
@@ -201,7 +201,7 @@ We get a unique hash for this commit.
 
 ```
 $ git rm B.txt
-rm 'B.txt'
+// rm 'B.txt'
 ```
 
 This command did two things at once. It removed the file B from the working tree and also staged this removal. Now we commit again
@@ -226,8 +226,8 @@ Now let's modify A.txt.
 ```
 $ vi A.txt
 $ cat A.txt
-This the the content of file A
-Modified file A
+// This the the content of file A
+// Modified file A
 ```
 
 With the git checkout command, we can replace the new A.txt in the working tree, with the previous version of A.txt that is still in the staging area. Effectively we will be discarding the new working tree changes.
@@ -235,7 +235,7 @@ With the git checkout command, we can replace the new A.txt in the working tree,
 ```
 $ git checkout -- A.txt
 $ cat A.txt
-This the the content of file A
+// This the the content of file A
 $ git diff
 $
 ```
@@ -251,8 +251,8 @@ Now lets modify the contents of file A once again and add it to the staging area
 ```
 $ vi A.txt 
 $ cat A.txt 
-This the the content of file A
-Modified file A once again
+// This the the content of file A
+// Modified file A once again
 $ git add A.txt
 $ git status
 On branch master
@@ -270,7 +270,7 @@ Unstaged changes after reset:
 M	A.txt
 $ git checkout -- A.txt
 $ cat A.txt
-This the the content of file A
+// This the the content of file A
 ```
 
 #### Restore from an earlier commit:
